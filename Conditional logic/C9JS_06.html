@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>6. Conditional Logic in js</title>
+    <script type="text/javascript">
+        var someValue = 24;
+        var otherValue = 23;
+
+        // if (someValue < 30) {
+        //     alert("first case");
+        // }
+
+        // someValue = false;
+
+        // if (someValue != 24) {
+
+        // }
+
+        // //this says that someValue is false
+        // if (!someValue) {
+
+        // }
+
+        // //this says that someValue is true
+        // if (someValue) {
+
+        // }
+
+        // var myResult = "";
+        // myResult = (someValue === 24) ? "equal" : "not equal";
+        // myResult = (24 / "bob") ? "truthy" : "falsey";
+        // myResult = undefined ? "truthy" : "falsey";
+
+        // //This last one retsurns truthy but we expect undefined/falsey.
+        // //It returns truthy because typeof returns a string
+        // //and the answer undefiend is a string.
+        // myResult = typeof someUndefinedVariable ? "truthy" : "falsey";
+        // alert(myResult);
+
+        // var userName = "Rimmer";
+        // switch (userName) {
+        //     case "Lister":
+        //         document.write("care for a good curry?")
+        //         break;
+        //     case "Rimmer":
+        //         document.write("Welcome back, smeg head");
+        //         break;
+        //     default:
+        //         document.write("Are you a emohawk?");
+        //         break;
+        // }
+
+        var rightNow = new Date();
+        var currentHour = rightNow.getHours();
+        switch (true) {
+            case (currentHour > 8 && currentHour < 12):
+                document.write("Morning, sunshine!");
+                break;
+            case (currentHour === 12):
+                document.write("lunchtime");
+                break;
+            case (currentHour > 12 && currentHour < 18):
+                document.write("Fight the urge to siesta!");
+                break;
+            default:
+                document.write("Careful sparky, they'll think you are a hard worker!");
+                break;
+        }
+    </script>
+</head>
+
+<body>
+    <h1>6. Conditional Logic in js</h1>
+</body>
+
+</html>
